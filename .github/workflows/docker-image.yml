@@ -25,7 +25,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
 
-    - name: Convert repository owner to a lowercase
+    - name: Convert repository owner to  lowercase
       id: lowercase_repo_owner
       run: echo "REPO_OWNER=$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
